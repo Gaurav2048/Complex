@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.saurav.complex.MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+   <android.support.v7.widget.CardView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="8dp"
+       app:cardElevation="9dp"
+       app:cardBackgroundColor="#fff"
+
+       >
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           >
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Developer's note"
+               android:layout_marginTop="10dp"
+               android:drawableLeft="@mipmap/ic_developer"
+               android:gravity="center|left"
+               android:textColor="#000"
+               android:drawablePadding="8dp"
+               android:textSize="18sp"
+               android:layout_marginLeft="5dp"
+               android:id="@+id/developer_note_intro"
+
+
+               />
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/developer_note"
+               android:layout_marginLeft="14dp"
+               android:lineSpacingMultiplier="1.2"
+               android:layout_marginRight="14dp"
+               android:textSize="15sp"
+               android:textColor="#898888"
+               android:layout_marginTop="10dp"
+               android:lineSpacingExtra="2dp"
+               android:id="@+id/eveloper_note_detail"
+               android:layout_marginBottom="10dp"
+
+
+               />
+
+       </LinearLayout>
+   </android.support.v7.widget.CardView>
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#fff"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="15dp"
+    app:cardElevation="7dp"
+    app:cardCornerRadius="4dp"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apps available"
+            android:layout_margin="10dp"
+            android:textSize="14sp"
+            android:id="@+id/placceholder"
+            android:onClick="onClick"
+            android:textColor="#999797"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_height="wrap_content"
+            android:text="WikiPediA"
+            android:drawableLeft="@mipmap/ic_wikipedia"
+            android:textColor="#000"
+            android:id="@+id/wekepedia"
+            android:textSize="16sp"
+            android:drawablePadding="11dp"
+            android:gravity="center_vertical|left"
+            android:drawableRight="@mipmap/ic_next"
+            android:onClick="onClick"
+
+
+
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1.2px"
+            android:background="#cbcbcb"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_height="wrap_content"
+            android:text="Playstore"
+            android:drawableLeft="@mipmap/ic_playstore"
+            android:textColor="#000"
+            android:id="@+id/play_store"
+            android:textSize="16sp"
+            android:drawablePadding="11dp"
+            android:gravity="center_vertical|left"
+            android:drawableRight="@mipmap/ic_next"
+            android:onClick="onClick"
+
+
+
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1.2px"
+            android:background="#cbcbcb"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_height="wrap_content"
+            android:text="Swiggy"
+            android:drawableLeft="@mipmap/ic_swiggy"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:id="@+id/swiggy"
+            android:drawablePadding="11dp"
+            android:gravity="center_vertical|left"
+            android:drawableRight="@mipmap/ic_next"
+            android:onClick="onClick"
+
+
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1.2px"
+            android:background="#cbcbcb"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_height="wrap_content"
+            android:text="Google Maps"
+            android:drawableLeft="@mipmap/ic_google_maps"
+            android:textColor="#939292"
+            android:textSize="16sp"
+            android:drawablePadding="11dp"
+            android:id="@+id/google_map"
+            android:gravity="center_vertical|left"
+            android:drawableRight="@mipmap/ic_next"
+            android:onClick="onClick"
+
+
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1.2px"
+            android:background="#cbcbcb"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_height="wrap_content"
+            android:text="The Hindu"
+            android:drawableLeft="@mipmap/ic_thehindu"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:id="@+id/the_hindu"
+            android:drawablePadding="11dp"
+            android:gravity="center_vertical|left"
+            android:drawableRight="@mipmap/ic_next"
+            android:onClick="onClick"
+
+
+            />
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="3dp"
+        app:cardBackgroundColor="#fff"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+
+        >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/ic_gitico"
+        android:text="Libraries used "
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:drawablePadding="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+
+
+        />
+</LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+</ScrollView>

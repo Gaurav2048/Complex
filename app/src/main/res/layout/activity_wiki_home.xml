@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.saurav.complex.WikiPedia.fragments.ExploreFragment"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:background="@color/colorPrimaryWikipedia"
+            app:contentScrim="@color/colorPrimaryWikipedia"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:toolbarId="@+id/toolbar">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                 android:tint="#BB3E50B4"
+
+
+                >
+                <android.support.v7.widget.CardView
+                    android:layout_width="fill_parent"
+                    android:layout_height="49dp"
+                    app:cardBackgroundColor="#fff"
+                    android:layout_marginTop="65dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    >
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:drawableLeft="@drawable/ic_search_second"
+                       android:drawableRight="@drawable/ic_voice"
+                       android:layout_gravity="center_vertical"
+                       android:layout_marginLeft="8dp"
+                       android:gravity="center_vertical|left"
+                       android:textSize="19sp"
+                       android:layout_marginRight="8dp"
+                       android:hint="Search WikiPedia"
+                        android:drawablePadding="18dp"
+                       android:backgroundTint="@android:color/transparent"
+
+                       android:id="@+id/editText"
+                       android:textColorHint="#9E9E9E"
+
+                       />
+
+
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimaryWikipedia"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                  >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="W"
+                    android:id="@+id/toolbar_title"
+                    android:textSize="26sp"
+                    android:gravity="right|bottom"
+
+                     android:textColor="#fff"
+                    android:paddingBottom="7dp"
+
+                    /><TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="IKIPEDI"
+                android:id="@+id/toolbar_title1"
+                android:gravity="center|bottom"
+                android:paddingBottom="10.2sp"
+                android:textSize="15sp"
+                android:textColor="#fff"
+
+                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="A"
+                    android:gravity="left|bottom"
+                    android:id="@+id/toolbar_title2"
+                    android:textSize="26sp"
+                    android:textColor="#fff"
+                    android:paddingBottom="7dp"
+
+                    />
+            </android.support.v7.widget.Toolbar>
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_wiki_home" />
+
+
+
+</android.support.design.widget.CoordinatorLayout>

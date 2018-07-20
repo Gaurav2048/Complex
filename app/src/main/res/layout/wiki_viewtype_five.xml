@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="2dp"
+    android:layout_margin="6dp"
+    app:cardElevation="6dp"
+    app:cardBackgroundColor="#fff"
+
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_camera"
+        app:civ_circle_background_color="#72777D"
+        android:id="@+id/pic_icon"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+android:gravity="center_vertical|left"
+        android:layout_toRightOf="@+id/pic_icon"
+        android:text="Picture of the day"
+        android:textColor="#000"
+        android:id="@+id/texdt_desc"
+        android:textSize="18sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+
+        android:layout_marginLeft="9dp"
+
+
+        />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="32dp"
+    android:text="18-jul-2018"
+    android:drawableRight="@drawable/ic_three_dots_black"
+    android:layout_alignParentTop="true"
+    android:drawablePadding="12dp"
+    android:layout_alignParentRight="true"
+    android:layout_marginTop="15dp"
+    android:gravity="center_vertical|left"
+
+
+    />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_below="@+id/texdt_desc"
+        android:id="@+id/rel_ooone"
+        >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hans"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:id="@+id/image_central"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mute swans (Cygnus olor) and their cygnets in "
+        android:textColor="#fff"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="#2e605f5f"
+        android:layout_alignParentBottom="true"
+
+         />
+
+    </RelativeLayout>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="DOWNLOAD"
+    android:drawableLeft="@drawable/ic_download"
+    android:drawablePadding="10dp"
+    android:drawableRight="@drawable/ic_share"
+
+android:gravity="center_vertical|left"
+    android:layout_below="@+id/rel_ooone"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp"
+    android:layout_marginLeft="10dp"
+    android:textColor="#72777D"
+    android:textSize="17sp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+
+    />
+</RelativeLayout>
+</android.support.v7.widget.CardView>

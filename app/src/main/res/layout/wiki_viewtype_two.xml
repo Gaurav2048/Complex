@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   app:cardBackgroundColor="@android:color/transparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+  >
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#fff"
+        app:cardElevation="6dp"
+        android:layout_margin="6dp"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:id="@+id/relative_layout_one"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="12dp"
+        app:civ_circle_background_color="@color/colorPrimaryDarkWikiPedia"
+        android:src="@drawable/ic_event"
+        android:layout_centerVertical="true"
+        android:id="@+id/event"
+
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="On this day"
+        android:textColor="#000"
+        android:textSize="17sp"
+        android:layout_toRightOf="@+id/event"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10sp"
+
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_three_dots_black"
+        android:layout_alignParentRight="true"
+        android:id="@+id/type_two_dots"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="18 jul"
+        android:textColor="#797979"
+        android:layout_toLeftOf="@+id/type_two_dots"
+        android:layout_centerVertical="true"
+        android:textSize="16sp"
+
+
+        />
+</RelativeLayout>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="18 July"
+    android:id="@+id/date_detail"
+    android:layout_marginLeft="12dp"
+    android:layout_marginTop="16dp"
+    android:layout_below="@+id/relative_layout_one"
+    android:textSize="27sp"
+    android:textColor="#000"
+
+
+    />
+        <ImageView
+            android:layout_width="2px"
+            android:layout_height="18dp"
+            android:background="#C8CCD1"
+            android:layout_below="@+id/date_detail"
+            android:layout_marginLeft="26dp"
+            android:id="@+id/bar_one"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bar_one"
+            android:text="6 tears ago"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:background="#72777D"
+            android:padding="3.2dp"
+            android:id="@+id/years_ago"
+            android:layout_marginLeft="12dp"
+
+
+
+
+            />
+        <ImageView
+            android:layout_width="2px"
+            android:layout_height="20dp"
+            android:background="#C8CCD1"
+            android:layout_below="@+id/years_ago"
+            android:layout_marginLeft="26dp"
+            android:id="@+id/bar_two"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            app:civ_circle_background_color="#C8CCD1"
+            android:layout_below="@+id/bar_two"
+            android:layout_marginLeft="21.6dp"
+            android:src="@drawable/ic_name"
+            android:id="@+id/circle"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:text="2012"
+            android:textColor="#000"
+            android:textSize="27sp"
+            android:layout_toRightOf="@+id/circle"
+            android:layout_below="@+id/years_ago"
+            android:id="@+id/year"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="16dp"
+            
+            
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/explore_view_two"
+            android:layout_marginLeft="16dp"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_below="@+id/year"
+            android:layout_marginTop="8dp"
+            android:lineSpacingExtra="1.2sp"
+            android:lineSpacingMultiplier="1.2"
+            android:layout_toRightOf="@+id/bar_three"
+            android:id="@+id/text_year_detail"
+
+            />
+        <ImageView
+            android:layout_width="2px"
+            android:layout_height="fill_parent"
+            android:background="#C8CCD1"
+            android:layout_below="@+id/circle"
+            android:layout_marginLeft="26dp"
+            android:id="@+id/bar_three"
+            android:layout_above="@+id/years_next_ago"
+            android:layout_marginTop="3dp"
+
+            android:layout_marginBottom="3dp"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_below="@+id/text_year_detail"
+            android:layout_marginBottom="9dp"
+            android:layout_marginTop="9dp"
+            android:id="@+id/recycler_type_two_wiki"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recycler_type_two_wiki"
+            android:text="23 tears ago"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:background="#C8CCD1"
+            android:padding="4dp"
+            android:id="@+id/years_next_ago"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="12dp"
+
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1.3px"
+            android:background="#C8CCD1"
+            android:layout_below="@+id/years_next_ago"
+            android:id="@+id/bar_four"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MORE ON THIS DAY"
+            android:textColor="#72777D"
+            android:layout_below="@+id/bar_four"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/ic_arrow_right"
+            android:gravity="center_vertical"
+            android:drawablePadding="8dp"
+            android:layout_marginTop="5dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+
+
+
+
+            />
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

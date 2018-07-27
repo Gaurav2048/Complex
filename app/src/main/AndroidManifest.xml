@@ -51,6 +51,13 @@
         <activity
             android:name=".Playstore.PlayStoreHomeActivity"
             android:label="@string/title_activity_play_store_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TheHindu.HinduStartActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".TheHindu.HinduhomeActivity"
+            android:label="@string/title_activity_hinduhome"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

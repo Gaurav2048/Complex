@@ -12,6 +12,7 @@
     <color name="colorPrimaryplaystore">#3366CC</color>
     <color name="colorPrimaryDarkPlaystore">#2A4B8D</color>
 <color name="home">#0F9D58</color>
+    <color name="black">#000</color>
     <color name="trst">#00ffffff</color>
 <color name="movie">#FF1744</color>
     <color name="books">#039BE5</color>

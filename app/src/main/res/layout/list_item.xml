@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dip"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/lblListItem"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dip"
+        android:textColor="#424242"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="50dp"
+        android:paddingTop="7dp"
+        android:text="sub item"
+        android:paddingBottom="7dp"
+/>
+</LinearLayout>

@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.saurav.complex.Playstore.PlayStoreHomeActivity;
+import com.example.saurav.complex.TheHindu.HinduStartActivity;
 import com.example.saurav.complex.WikiPedia.IntroWikiActivity;
 import com.karumi.dexter.Dexter;
 import com.karumi.dexter.MultiplePermissionsReport;
@@ -69,6 +70,9 @@ TextView developer_note_intro,eveloper_note_detail,the_hindu,placceholder,wekepe
         startActivity(new Intent(getApplicationContext(), IntroWikiActivity.class));
         }else if (v.getId()==R.id.play_store){
             startActivity(new Intent(getApplicationContext(), PlayStoreHomeActivity.class));
+
+        }else if (v.getId()==R.id.the_hindu){
+            startActivity(new Intent(getApplicationContext(), HinduStartActivity.class));
 
         }
     }
